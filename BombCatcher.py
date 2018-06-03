@@ -97,9 +97,13 @@ pygame.display.set_caption("Bomb Catcher")
 audio_clip = pygame.mixer.Sound("./rc/explosion.wav")
 audio_channel = pygame.mixer.find_channel(True)
 
+#framerate = pygame.time.Clock()
+
 while(True):
     screen.fill((0, 0, 200))
     time.sleep(0.003)
+
+    #framerate.tick(30) # frame rate : 30
 
     for event in pygame.event.get():
         if event.type == QUIT:
