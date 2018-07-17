@@ -34,7 +34,7 @@ class MySprite(pygame.sprite.Sprite):
         rect = self.master_image.get_rect()
         self.last_frame = (rect.width // width) * (rect.height // height) - 1 # calculate total frames according to the size of one frame
 
-    def update(self, current_time, rate = 400): # rate: how many ticks each frame
+    def update(self, current_time, rate = 900): # rate: how many ticks each frame
         #update animation frame number
         if current_time > self.last_time + rate:
             self.frame += 1
